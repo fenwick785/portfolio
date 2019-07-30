@@ -1,0 +1,485 @@
+/* POLICE * */
+@font-face{
+    font-family: 'pixelart';
+    src: url('police/SHPinscher-Regular.otf')
+}
+body {
+    font-family: 'pixelart';
+}
+.container-fluid {
+    padding: 0 !important;
+}
+main .degradeimg {
+    width: 100%
+}
+
+
+
+/* ******** HEADER ************ */
+header {
+    background-image: url('img/wallhaven-741144.jpg');
+    height: 1000px;
+}
+
+
+
+/*  NAV BAR */
+.bg-dark {
+     background-color: #287fd600!important;
+}
+header .navbar {
+    font-size: 2em;
+    width: 80%;
+}
+.navbar .nav-item a{
+    padding: 0 5vh !important;
+    text-decoration: none;
+    color: white;
+}
+.navbar-nav {
+    margin-left: 0%
+}
+.navbar-brand{
+    font-size: 2em;
+    border: 4px white solid;
+    border-radius: 100px;
+    padding: 0 20px;
+}
+header .navavatar{
+    display: flex;
+}
+.navavatar .avatar{
+    width: 10%;
+    height: 20%;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    z-index: 99;
+    transition: 0.5s;
+    background-image: url(img/avatar.png) /*no-repeat*/;
+    background-size: cover;
+}
+
+/* navbar hover */
+.navbar .nav-item .nav-link1:hover {
+    color: yellow;
+}
+.navbar .nav-item .nav-link2:hover {
+    color: rgb(255, 1, 213);
+}
+.navbar .nav-item .nav-link3:hover {
+    color: rgb(0, 225, 255);
+}
+.navbar-brand:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 3, 234)), to(rgb(238, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: rgb(0, 225, 255) 4px solid;
+    border-radius: 100px;
+}
+.navavatar .avatar:hover{
+   /* width: 12%;
+    height: 18%;*/
+    background-image: url(img/avatar1.png)
+    
+}
+/* ****** */
+
+/* header titre */
+header .titrenico{
+    font-size: 7em;
+    font-family: 'pixelart';
+    border: 15px white solid;
+    border-radius: 100px;
+    text-align: center;
+    margin: 15% auto 5% auto;
+    color:white !important;
+    /*width: 23%;*/
+    padding: 5px;
+}
+header .presentation{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
+/* ************* PARRALLAX ********************* */
+.parallax1 { 
+    /* The image used */
+    background-image: url("IMG/NUITManhattan_effet\ bleu.jpg");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+/* ********* MAIN ********* */
+
+/* *************PROFIL************* */
+main .profil{
+    background-image: url('img/wallhaven-496142.png');
+    height: 1070px;
+}
+
+
+.profil .titre{
+    font-size: 5em;
+    font-family: 'pixelart';
+    border: 10px #0a2830 solid;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto 2% auto;
+    color:#0a2830 !important;
+    /*width: 23%;*/
+}
+
+/* timeline */
+/* https://bootsnipp.com/snippets/Q0ppE */
+
+.main-timeline3{
+    overflow:hidden;position:relative
+}
+.main-timeline3:before{
+    content:"";
+    width:10px;
+    height:100%;
+    border:3px solid #ffbea3;
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%)
+}
+.main-timeline3 .timeline {
+    float: right;
+    position: relative;
+    width: 50%;
+    padding: 10px 60px 10px 100px;
+}
+
+.main-timeline3 .timeline:before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: #0a2830;
+    box-shadow: 0 0 1px 5px #0a2830;
+}
+
+.main-timeline3 .timeline-content {
+    display: block;
+    position: relative;
+    padding: 70px 30px 20px;
+    background: #e9e9e7;
+    box-shadow: 0 0 10px rgba(0,0,0,.2) inset;
+    border: #904b6b 5px ridge;
+}
+
+.main-timeline3 .timeline-content:hover {
+    text-decoration: none;
+}
+
+.main-timeline3 .year {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 80%;
+    height: 50px;
+    padding: 0 0 0 50px;
+    border-radius: 10px 10px 10px 0;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #fff;
+    background: #0a2830;
+    box-shadow: 0 0 20px rgba(0,0,0,.4) inset;
+}
+
+.main-timeline3 .year:before {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    border-top: 40px solid #0a2830;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.main-timeline3 .title {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.main-timeline3 .description {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #6f6f6f;
+}
+
+.main-timeline3 .timeline:nth-child(2n) {
+    padding: 10px 100px 10px 60px;
+    text-align: right;
+}
+
+.main-timeline3 .timeline:nth-child(2n):before {
+    right: -20px;
+    left: auto;
+    background: #50435d;
+    box-shadow: 0 0 1px 5px #50435d;
+}
+
+.main-timeline3 .timeline:nth-child(2n) .year {
+    right: -20px;
+    left: auto;
+    padding-right: 50px;
+    border-radius: 10px 10px 0;
+    background: #50435d;
+}
+
+.main-timeline3 .timeline:nth-child(2n) .year:before {
+    right: 0;
+    left: auto;
+    border-top-color: #50435d;
+    border-right: 20px solid transparent;
+    border-left: none;
+}
+
+.main-timeline3 .timeline:nth-child(2) {
+    margin-top: 140px;
+}
+
+.main-timeline3 .timeline:nth-child(odd) {
+    margin: -140px 0 0;
+}
+
+.main-timeline3 .timeline:nth-child(even) {
+    margin-bottom: 60px;
+}
+
+.main-timeline3 .timeline:first-child,
+.main-timeline3 .timeline:last-child:nth-child(even) {
+    margin: 0;
+}
+
+.main-timeline3 .timeline:nth-child(3n):before {
+    background: #904b6b;
+    box-shadow: 0 0 1px 5px #904b6b;
+}
+
+.main-timeline3 .timeline:nth-child(3n) .year {
+    background: #904b6b;
+}
+
+.main-timeline3 .timeline:nth-child(3n) .year:before {
+    border-top-color: #904b6b;
+}
+
+.main-timeline3 .timeline:nth-child(4n):before {
+    background: #ec8e9e;
+    box-shadow: 0 0 1px 5px #ec8e9e;
+}
+
+.main-timeline3 .timeline:nth-child(4n) .year {
+    background: #ec8e9e;
+}
+
+.main-timeline3 .timeline:nth-child(4n) .year:before {
+    border-top-color: #ec8e9e;
+}
+
+@media only screen and (max-width:990px) {
+    .main-timeline3:before {
+        top: 8%;
+    }
+
+    .main-timeline3 .timeline {
+        padding: 10px 10px 10px 100px;
+    }
+
+    .main-timeline3 .timeline:nth-child(2n) {
+        padding: 10px 100px 10px 10px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .main-timeline3:before {
+        top: 0;
+        left: 12px;
+        width: 8px;
+        transform: translateX(0);
+    }
+
+    .main-timeline3 .timeline,
+    .main-timeline3 .timeline:nth-child(even) ,
+    .main-timeline3 .timeline:nth-child(odd) {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 0 0 0 60px;
+        text-align: left;
+    }
+
+    .main-timeline3 .timeline:before,
+    .main-timeline3 .timeline:nth-child(2n):before {
+        top: 38px;
+        left: 6px;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #fff;
+    }
+
+    .main-timeline3 .timeline:nth-child(2n) .year {
+        right: auto;
+        left: -20px;
+        border-radius: 10px 10px 10px 0;
+    }
+
+    .main-timeline3 .timeline:nth-child(2n) .year:before {
+        right: auto;
+        left: 0;
+        border-right: none;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+}
+
+
+
+/* *********** SECTION PROJETS ******* */
+.parallax2 { 
+    /* The image used */
+    background-image: url("img/3840x2160uilding_landscape_New_York_City_USA-1430053.jpg");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+main .projets{
+    background-image: url(img/wallhaven-724354.jpg);
+    height:1440px;
+    padding: 10vh;
+}
+.projets .titre{
+    font-size: 5em;
+    font-family: 'pixelart';
+    border: 10px #48483e solid;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto 5% auto;
+    color:#48483e !important;
+    /*width: 23%;*/
+}
+.ligne1card .card {
+    /*width: 20% !important;*/
+    border: 1.5vh ridge #48483e;
+    border-radius: 0;
+}
+.ligne2card {
+    margin-top: 10%;  
+}
+.ligne2card .card {
+    /*width: 20% !important;*/
+    border: 1.5vh ridge #7a7a70;
+    border-radius: 0;
+}
+
+
+/* ************** SECTION COMPETENCES *********** */
+
+.parallax3 { 
+    /* The image used */
+    background-image: url("img/MANATANNCITY\ -\ Copie.jpg");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+main .competences {
+    background-image: url(img/wallhaven-41023.png);
+    height:1080px;
+}
+.competences .titre{
+    font-size: 5em;
+    font-family: 'pixelart';
+    border: 10px #d4d0d2 solid;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto 5% auto;
+    color:#d4d0d2 !important;
+    /*width: 23%;*/
+}
+
+/* ******** BARRE COMPETENCES **************** */
+
+.competences .barrecomp{
+    width: 70%;
+    margin: 15vh auto;
+}
+.barrecomp .progress {
+    margin-top: 4vh;
+    height: 5vh; 
+    border: white 2px solid
+}
+.barrecomp .bar-html{
+    color: white;
+    background-color: orangered;
+}
+.barrecomp .bar-java{
+    background: yellow;
+    color: black;
+}
+.barrecomp .bar-php{
+    background: #484c89;
+    color: white;
+}
+.barrecomp .bar-sql{
+    background: #e48e00;
+    color: #00618a;
+}
+.barrecomp .barwordpress{
+    background: #21769d;
+    color: white;
+}
+.barrecomp .bar-angular{
+    background: rgb(204, 0, 0);
+    color: white;
+}
+.barrecomp .progress div {
+    font-size: 3em;
+}
+
+
+
+/* footer */
